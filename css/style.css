@@ -1,0 +1,95 @@
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+
+  }
+  body {
+font-family: "Lato";
+font-style: normal;
+font-size: 16px;
+line-height: 1.2;
+font-weight: normal;
+color: black;
+  }
+
+  /*Header*/
+  .wrapper {
+max-width: 1060px;
+margin: 0 auto;
+  }
+  .header {
+
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+  }
+  .header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 62px;
+  }
+  .header__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .header__item{
+    margin-right: 82px;
+  }
+  .header__item:last-child{
+    margin-right: 0px;
+  }
+  .header__link{
+    font-size: 18px;
+line-height: 24px;
+color: white;
+text-decoration: none;
+  }
+.header__link:hover, .header__link:focus, .header__link:active{
+    opacity: 75%;
+}
+/*Header end*/
+
+/*Intro start*/
+.intro{
+    height: 100vh;
+    background: url(../img/intro-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+
+
+/*Intro end*/
