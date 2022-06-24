@@ -51,6 +51,29 @@ color: black;
 max-width: 1060px;
 margin: 0 auto;
   }
+  .wrapper__full{
+    max-width: 1262px;
+    margin: 0 auto;
+  }
+  .section__title{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    position: relative;
+    padding-bottom: 10px;
+
+  }
+  .section__title::after{
+    display: block;
+    content: '';
+    width: 253px;
+    height: 3px;
+    background-color: #006DFE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
   .header {
 position: fixed;
 top: 0;
@@ -62,7 +85,7 @@ width: 100%;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-    padding-top: 62px;
+    padding-top: 56px;
   }
   .header__list{
     display: flex;
@@ -81,16 +104,17 @@ width: 100%;
     text-decoration: none;
   }
 .header__link:hover, .header__link:focus, .header__link:active{
-    opacity: 75%;
+    opacity: .75%;
 }
 /*Header end*/
 
 /*Intro start*/
 .intro{
-   min-height: 100vh;
+    min-height: 100vh;
     background: url(../img/intro-bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
+    padding-bottom: 323px;
 }
 .intro__tittle{
     max-width: 619px;
@@ -99,7 +123,7 @@ width: 100%;
     line-height: 60px;
     color: white;
     margin-bottom: 22px;
-}   
+}
 .intro__subtitle{
     max-width: 546px;
     color: white;
@@ -109,9 +133,10 @@ width: 100%;
     margin-bottom: 59px;
 }
 
-.search-form__intro{
+.search-form__info{
     display: flex;
     flex-wrap: wrap;
+   /* margin-bottom: 153px;*/
 }
 .search-form__field{
     width: 297px;
@@ -133,7 +158,7 @@ width: 100%;
     color: white;;
 }
 .search-form__submit{
-   padding: 15px 39px;
+    padding: 15px 39px;
     background-color: #1B7DFF;
     color: white;
     text-transform: uppercase;
@@ -146,9 +171,10 @@ width: 100%;
 }
 
 /*Intro end*/
+
 /*Benefits style*/
 .benefits{
-    margin-bottom: 131px;
+    margin-bottom: 131px; 
 }
 .benefits__wrap{
     max-width: 1262px; 
@@ -156,13 +182,13 @@ width: 100%;
     margin: 0 auto;
     box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
     position: relative;
+    
 }
 .benefits__title{
     width: 100%;
     font-weight: 500;
     font-size: 35px;
-    line-height: 42px;
-    color: #102746;
+    line-height: 42px;   
     padding: 93px 100px 88px 100px;
     position: absolute;
     top: 0;
@@ -174,7 +200,7 @@ width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 55px;
-    padding: 0 100px;
+   padding: 0 100px;
 
 }
 .benefits__card{
@@ -191,13 +217,13 @@ width: 100%;
 .benefits__card-title{
     font-weight: 500;
     font-size: 18px;
-    /*line-height: 24px;*/
+    line-height: 24px;
     margin-bottom: 26px;
 }
 .benefits__card-desc{
     font-weight: 400;
     font-size: 16px;
-    /*line-height: 24px;*/
+    line-height: 24px;
     margin-bottom: 39px;
 }
 .benefits__card-more{
@@ -215,7 +241,98 @@ width: 100%;
 .benefits__card-more:hover, .benefits__card-more:focus{
     background: url(../img/svg/arrov.svg) no-repeat right center
 }
-
-
-
 /*end benefits style*/
+/*Places start*/
+
+.places{
+    margin-bottom: 131px;
+}
+.places__title{
+   margin-right: 15px;
+}
+.places__caption{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    font-weight: 400;
+  
+}
+.places__view-all{
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    padding-right: 59px;
+    background: url(../img/svg/arrov.svg) no-repeat 95% center;
+}
+.places__view-all:hover, .places__view-all:focus{
+    opacity: 65%;
+}
+.places__cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+.places__card{
+    position: relative;
+    overflow: hidden;
+}
+.places__card::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.places__card:hover, .places__card-pick:hover{
+    transform: scale(1.05);
+
+}
+.places__card-title{
+font-size: 50px;
+line-height: 60px;
+color: #fff;
+position: absolute;
+bottom: 27px;
+left: 29px;
+z-index: 3;
+}
+.places__card_size_lg{
+    grid-column: span 3;
+}
+.places__card_size_sm{
+    grid-column: span 2;
+}
+.places__card-pick{ 
+    width: 100%;
+    object-fit: cover;
+    transition: .15s all;
+}
+.places__card-pick_size_lg{
+    height: 354px;
+    object-fit: cover;
+
+}
+.places__card-pick_size_sm{
+    height: 283px;
+    object-fit: cover;
+    
+}
+.places__card-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+
+
+/*Places end*/
