@@ -239,7 +239,8 @@ width: 100%;
 
 }
 .benefits__card-more:hover, .benefits__card-more:focus{
-    background: url(../img/svg/arrov.svg) no-repeat right center
+    background: url(../img/svg/arrov.svg) no-repeat right center;
+    opacity: .65;
 }
 /*end benefits style*/
 /*Places start*/
@@ -268,32 +269,36 @@ width: 100%;
     background: url(../img/svg/arrov.svg) no-repeat 95% center;
 }
 .places__view-all:hover, .places__view-all:focus{
-    opacity: 65%;
+    opacity: .65;
 }
 .places__cards{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
+
 }
 .places__card{
     position: relative;
     overflow: hidden;
+    
+}
+.places__card:hover, .places__card-pick{
+    transform: scale(1.05);
+
 }
 .places__card::after{
     display: block;
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgba(21, 24, 36, 0.4);
+   background-color: rgba(21, 24, 36, 0.2);
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
 }
-.places__card:hover, .places__card-pick:hover{
-    transform: scale(1.05);
 
-}
+
 .places__card-title{
 font-size: 50px;
 line-height: 60px;
@@ -315,8 +320,8 @@ z-index: 3;
     transition: .15s all;
 }
 .places__card-pick_size_lg{
-    height: 354px;
-    object-fit: cover;
+   height: 354px;
+   object-fit: cover;
 
 }
 .places__card-pick_size_sm{
@@ -333,6 +338,54 @@ z-index: 3;
     z-index: 4;
 }
 
-
-
 /*Places end*/
+ /*Tours start*/
+.tours{
+    margin-bottom: 139px;
+}
+.wrapper-full{
+   width: 1271px;
+   margin: 0 auto;
+}
+.tours__tour{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 108px;
+    align-items: center;
+    margin-bottom: 77px;
+}
+.tour__info{
+padding-left: 47px;
+}
+
+.tour__title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px; 
+    color: #102746;
+    margin-bottom: 85px;
+}
+.tour__disc{
+    max-width: 519px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102746;
+    margin-bottom: 58px;
+}
+.tour__more{
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    padding-right: 59px;
+    background: url(../img/svg/arrov.svg) no-repeat 95% center;
+    transition: 0.2s all;
+}
+.tour__more:hover, .tour__more:focus{
+    background: url(../img/svg/arrov.svg) no-repeat right center;
+    opacity: .65;
+    transition: 0.2s all;
+}
+
+ /*Tours end*/
