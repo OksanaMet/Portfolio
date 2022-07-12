@@ -482,6 +482,7 @@ z-index: 999;
     width: 40px;
     height: 28px;
     position: relative;
+ 
 }
 
 .burger__line {
@@ -492,19 +493,20 @@ z-index: 999;
     position: absolute;
     left: 0;
 }
-.burger__line_first{
+.burger__line-first{
     top: 0;
 }
-.burger__line_second{
+.burger__line-second{
     top: 50%;
     transform: translateY(-50%);
 }
-.burger__line_third{
+.burger__line-third{
     bottom: 0;
 }
 @media screen and (max-width: 767px) {
     .header__burger {
         display: block;
+        margin-right: 60px;
     }
     .header__nav{
         width: 100%;
@@ -517,6 +519,7 @@ z-index: 999;
         padding: 75px;
         transform: translateX(100%);
         transition: .2s all linear;
+        
     }
     .header__nav_active{
         transform: translateX(0)
@@ -738,6 +741,10 @@ z-index: 999;
 }
 
 @media screen and (max-width: 767px) {
+    .tours{
+        margin-bottom: 76px;
+    }
+    
     .search-form__field{
         width: 100%;
         margin-right: 0;
@@ -833,7 +840,6 @@ z-index: 999;
     z-index: 2;   
 }
 
-
 .places__card-title{
 font-size: 50px;
 line-height: 60px;
@@ -890,8 +896,14 @@ z-index: 3;
     .places__card-pick-size-lg, .place__card-pick-size-sm{
         height: 230px;
         }
-        .places{
+    .places{
             margin-bottom: 76px;
+        }
+    .places__view-all{
+            margin-bottom: 25px;
+        }
+        .places__caption{
+            margin-bottom: 0;
         }
     }
 /*Places end*/
@@ -1012,8 +1024,7 @@ padding-left: 47px;
     line-height: 24px;
     color: #fff;
     margin: 0 auto 0 0;
-    padding-right:  154px; 
-
+    padding-right: 154px; 
 }
 .top__card-likes{
     font-weight: 500;
@@ -1022,7 +1033,6 @@ line-height: 24px;
 color: #FFFFFF;
 padding-right: 20px;
 background: url(../img/svg/heart.svg) no-repeat right;
-
 }
 .top__card-comments{
     font-weight: 500;
@@ -1064,6 +1074,21 @@ line-height: 24px;
     }
     
 }
+@media screen and (max-width: 767px){
+    .top__card{
+       grid-column: span 6; 
+    }
+    .top__card-desc{
+        margin-bottom: 15px;
+    }
+    .top{
+        margin-bottom: 76px; 
+       }
+       .top__card-more{
+        max-width: 386px;
+       }
+    }
+
 
  /* Top places end*/
 
@@ -1088,6 +1113,7 @@ line-height: 24px;
     width: 100%;
     height: 100%; 
 }
+
  /*Video style start end*/
  /*Footer style start*/
  .footer{ 
@@ -1129,6 +1155,19 @@ line-height: 24px;
 @media screen and (max-width: 960px) {
     .footer{
         padding: 60px 0;
+    }
+}
+@media screen and (max-width: 767px){
+    .footer__logo{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .footer__nav{
+        width: 100%;
+    }
+    .footer__menu{
+        width: 50%;
+        margin-bottom: 24px;
     }
 }
   /*Footer style end*/
