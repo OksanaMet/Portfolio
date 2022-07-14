@@ -572,7 +572,7 @@ z-index: 999;
 /*Intro start*/
 .intro{
     min-height: 100vh;
-    background: url(../img/Hero.jpg) no-repeat center;
+    background: url(../img/Hero-min.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
     padding-bottom: 268px;
@@ -598,7 +598,6 @@ z-index: 999;
 .search-form__info{
     display: flex;
     flex-wrap: wrap;
-   /* margin-bottom: 153px;*/
 }
 .search-form__field{
     width: 297px;
